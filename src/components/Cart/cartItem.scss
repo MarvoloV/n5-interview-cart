@@ -1,0 +1,44 @@
+.cart-item {
+  display:flex;
+  gap:16px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  justify-content:center;
+  &__image{
+    width: 100px;
+    object-fit:cover;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top:4px;
+  }
+  &__details{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  &__quantity,
+  &__price,
+  &__subtotal {
+    margin:  0;
+    font-size: 1rem;
+
+  }
+
+  &__quantity {
+    color: #555;
+  }
+
+  &__price {
+    color: #888;
+  }
+
+  &__subtotal {
+    color: #000;
+    font-weight: bold;
+  }
+}
+

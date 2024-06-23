@@ -1,0 +1,18 @@
+.cart-header{
+  display:flex;
+  justify-content: space-between;
+  padding-right:32px;
+  align-items: center;
+  .cart-link,.cart-title{
+    font-size:20px;
+    margin-block:32px;
+  }
+  @media(min-width:768px){
+    .cart-link,.cart-title{
+      font-size:24px;
+    }
+    .cart-title{
+      padding-left:24px;
+    }
+  }
+}

@@ -1,12 +1,11 @@
-import './App.css'
-
+import "./App.scss";
+import { RouterProvider } from "./Router";
 function App() {
-  
 
   return (
-    <>
-     
-    </>
+
+    <RouterProvider />
+
   )
 }
 

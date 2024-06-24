@@ -39,6 +39,11 @@ Asegúrate de tener Node.js y npm (o yarn) instalados. Luego, instala las depend
    ```
    npm install
    ```
+3. **Copiar .env.example a .env**
+   ```
+   cp .env.example .env
+   ```
+
 
 3. **Correr el Proyecto Localmente:**
 

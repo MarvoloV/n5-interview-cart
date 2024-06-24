@@ -52,5 +52,14 @@ Asegúrate de tener Node.js y npm (o yarn) instalados. Luego, instala las depend
    ```
    npm run dev
    ```
+
+4. **Correr los test**
+  
+   ```
+   npm run test
+   npm run coverage
+   ```
+
+
 ## Acceder al Aplicativo:
 [https://n5-interview.vercel-cart.app/](https://n5-interview-cart.vercel.app/)

@@ -6,10 +6,10 @@ interface MainLayoutProps {
 
 export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <>
+    <div data-testid="main-layout">
       <Navbar />
       <main>{children}</main>
-    </>
+    </div>
   );
 };
 

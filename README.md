@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Aplicativo React de Gestión de Productos y Carrito de Compras
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Funcionamiento General del Aplicativo
 
-Currently, two official plugins are available:
+Este aplicativo React permite manejar un catálogo de productos, un carrito de compras y una funcionalidad para agregar nuevos productos. Aquí están las principales características:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Listado de Productos:**
+   - Se muestra un listado de productos obtenidos desde un archivo JSON adjunto.
+   - Cada producto tiene la opción de ser agregado al carrito de compras con la respectiva cantidad.
 
-## Expanding the ESLint configuration
+2. **Carrito de Compras:**
+   - Muestra los productos que han sido agregados con sus cantidades y precios unitarios.
+   - Calcula y muestra el total correspondiente a la compra en tiempo real.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Funcionalidades del Carrito:**
+   - **Actualizar Cantidades:** Permite ajustar la cantidad de cada producto en el carrito antes de realizar la compra.
+   - **Limpiar Carrito:** Vacía todos los productos agregados al carrito de compras.
+   - **Comprar:** Simula la compra, actualizando las cantidades de productos disponibles según lo comprado.
 
-- Configure the top-level `parserOptions` property like this:
+4. **Agregar Nuevos Productos:**
+   - Existe una página dedicada para agregar nuevos productos al catálogo.
+   - Los nuevos productos ingresados se guardan localmente o se podrían integrar con un backend para persistencia.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Pasos para hacer deploy de forma local en Vite
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para desplegar este aplicativo localmente utilizando Vite, sigue estos pasos:
+
+1. **Clonar el Repositorio:**
+   Clona el repositorio desde GitHub o donde se encuentre alojado.
+
+   ```
+   git clone <url-del-repositorio>
+   cd <nombre-del-proyecto>
+   ```
+
+2. **Instalar Dependencias:**
+Asegúrate de tener Node.js y npm (o yarn) instalados. Luego, instala las dependencias del proyecto.
+
+   ```
+   npm install
+   ```
+
+3. **Correr el Proyecto Localmente:**
+
+   Inicia el servidor de desarrollo de Vite.
+
+   ```
+   npm run dev
+   ```
+## Acceder al Aplicativo:
+https://n5-interview.vercel.app/
